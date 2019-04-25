@@ -12,4 +12,5 @@ echo "=====================${current_date}签到日志" >> "$path/signIn.log"
 while read name password
 do
 	${path}/t.sh $name $password $path
+  sleep 5s
 done < ${path}/account
